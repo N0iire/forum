@@ -1,7 +1,8 @@
 <x-base-layout>
-    <x-jet-authentication-card>
+
+    <x-jet-authentication-card >
         <x-slot name="logo">
-            <x-logos.main class="w-32" />
+            <x-logos.main class="w-40 mt-5 mx-32" />
         </x-slot>
 
         <x-jet-validation-errors class="mb-4" />
@@ -45,4 +46,12 @@
             </div>
         </form>
     </x-jet-authentication-card>
+
+    <x-logos.avatar>
+
+    </x-logos.avatar>
+
+
+    
+    
 </x-base-layout>
