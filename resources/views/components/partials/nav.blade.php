@@ -16,10 +16,10 @@
             {{-- Search Topic --}}
             <div class="flex items-center flex-grow">
 
-                <div class="p-2 text-white bg-blue-200 border rounded-l">
+                <div class="p-2 text-white bg-yellow-400 border rounded-l">
                     <x-heroicon-o-search class="w-6 h-6" />
                 </div>
-                <input type="search" name="" id="" class="w-full border-none rounded-r shadow-inner bg-blue-50 focus:ring-blue-200" placeholder="Search Topics">
+                <input type="search" name="" id="" class="w-full border-none rounded-r shadow-inner bg-yellow-50 focus:ring-yellow-300" placeholder="Cari Barang">
             </div>
 
             <div class="hidden sm:flex sm:items-center sm:ml-6">
@@ -149,7 +149,7 @@
 
                 <!-- Login -->
                 <x-jet-responsive-nav-link href="{{ route('login') }}" :active="request()->routeIs('login')">
-                    {{ __('Login') }}
+                    {{ __('masuk') }}
                 </x-jet-responsive-nav-link>
 
                 <!-- Registration -->

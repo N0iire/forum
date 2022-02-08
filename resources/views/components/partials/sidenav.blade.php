@@ -1,29 +1,27 @@
 <aside class="col-span-1 space-y-6 text-gray-600">
 
-    <div class="p-4 space-y-4 bg-white shadow">
+    <div class="p-4 space-y-4 bg-white shadow rounded-md">
         <div class="pb-4 border-b border-gray-200">
 
             {{-- Start Discusson Button --}}
-            <a href="{{ route('create') }}" class="inline-flex items-center px-4 py-2 text-xs font-semibold tracking-widest text-white uppercase transition bg-blue-500 border border-transparent rounded hover:bg-blue-400 active:bg-blue-600 focus:outline-none focus:border-gray-900 focus:ring focus:ring-gray-300 disabled:opacity-25" }}>
-                {{ __('Start a new discussion') }}
+            <a href="{{ route('create') }}" class="inline-flex items-center px-4 py-2 text-xs font-semibold tracking-widest text-white uppercase transition bg-yellow-500 border border-transparent rounded hover:bg-yellow-400 active:bg-yellow-600 focus:outline-none focus:border-gray-900 focus:ring focus:ring-gray-300 disabled:opacity-25" }}>
+                <ion-icon name="pencil" size="small" class="text-md mr-2"></ion-icon>
+                {{ __('Buat post baru') }}
             </a>
         </div>
 
         <div class="pb-4 space-y-4">
             {{-- Subscribe to thread button --}}
-            <x-buttons.secondary>
-                {{ __('Subscribe to Thread') }}
-            </x-buttons.secondary>
             <p class="text-sm text-gray-500">
-                Subscribe to be notified whenever new discussions are created in the "Category One" forum.
+                Buat postingan baru untuk menunjukan barang yang ingin kamu jual.
             </p>
         </div>
     </div>
 
     {{-- Categories --}}
-    <div class="p-4 space-y-4 bg-white shadow">
+    <div class="p-4 space-y-4 bg-white shadow rounded-md">
         <div class="pb-4 mb-4 border-b border-gray-200">
-            <h2 class="font-bold uppercase">Categories</h2>
+            <h2 class="font-bold uppercase">Kategori</h2>
         </div>
 
         <ul class="space-y-4">
@@ -60,24 +58,24 @@
         </ul>
     </div>
 
-    <div class="p-4 space-y-4 bg-white shadow">
+    <div class="p-4 space-y-4 bg-white shadow rounded-md">
         <ul class="space-y-4 text-gray-500">
             <li>
                 <a href="#" class="flex items-center space-x-2">
                     <x-heroicon-s-star class="w-5 h-5 text-yellow-500" />
-                    <span>Popular this week</span>
+                    <span>Sedang hangat minggu ini</span>
                 </a>
             </li>
             <li>
                 <a href="#" class="flex items-center space-x-2">
                     <x-heroicon-s-fire class="w-5 h-5 text-red-600" />
-                    <span>Popular all time</span>
+                    <span>Populer sepanjang waktu</span>
                 </a>
             </li>
             <li>
                 <a href="#" class="flex items-center space-x-2">
                     <x-heroicon-s-chat class="w-5 h-5 text-blue-400" />
-                    <span>No replies yet</span>
+                    <span>tidak ada balasan</span>
                 </a>
             </li>
         </ul>
