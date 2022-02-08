@@ -28,4 +28,6 @@ class CreatePostsTable extends Migration
     {
         Schema::dropIfExists('posts');
     }
+
+    //comment
 }
