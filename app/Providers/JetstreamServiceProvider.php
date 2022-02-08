@@ -13,8 +13,11 @@ class JetstreamServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function register()
-    {
+    protected function registerComponent(string $component) {
+        \Illuminate\Support\Facades\Blade::component('jetstream::components.'.$component, 'jet-'.$component);
+    }
+    public function register() {
+        $this->registerComponent('authentication-card2');
         //
     }
 
